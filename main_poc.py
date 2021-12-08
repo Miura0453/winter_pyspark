@@ -1,14 +1,8 @@
 
-
-# This .py file will be main invoker
-
-def _main_function(x):
-    # this is the main function
-    print(f'How are you {x}?')
-
-
-
-
+import transforms as trans
+from config import lista_grados as grados
 
 if __name__ == '__main__':
-    _main_function('Mario')
+    trans.grados_posibles(grados)
+    grado_escolar = str(input('Ingrese el Grado Escolar')).upper()
+    trans.ploteo_escuelas(grado_escolar)
